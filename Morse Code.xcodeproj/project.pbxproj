@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		E953F06220F7E2E700F795ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953F06120F7E2E700F795ED /* AppDelegate.swift */; };
 		E953F06420F7E2E700F795ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953F06320F7E2E700F795ED /* ViewController.swift */; };
-		E953F06720F7E2E700F795ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E953F06520F7E2E700F795ED /* Main.storyboard */; };
 		E953F06920F7E2E900F795ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E953F06820F7E2E900F795ED /* Assets.xcassets */; };
 		E953F06C20F7E2E900F795ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E953F06A20F7E2E900F795ED /* LaunchScreen.storyboard */; };
 		E953F07720F7E2E900F795ED /* Morse_CodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953F07620F7E2E900F795ED /* Morse_CodeTests.swift */; };
 		E953F08220F7E2E900F795ED /* Morse_CodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953F08120F7E2E900F795ED /* Morse_CodeUITests.swift */; };
+		E953F09020F8028F00F795ED /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953F08F20F8028F00F795ED /* LandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		E953F05E20F7E2E700F795ED /* Morse Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morse Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E953F06120F7E2E700F795ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E953F06320F7E2E700F795ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E953F06620F7E2E700F795ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E953F06820F7E2E900F795ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E953F06B20F7E2E900F795ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E953F06D20F7E2E900F795ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E953F07D20F7E2E900F795ED /* Morse CodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morse CodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E953F08120F7E2E900F795ED /* Morse_CodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morse_CodeUITests.swift; sourceTree = "<group>"; };
 		E953F08320F7E2E900F795ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E953F08F20F8028F00F795ED /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 			children = (
 				E953F06120F7E2E700F795ED /* AppDelegate.swift */,
 				E953F06320F7E2E700F795ED /* ViewController.swift */,
-				E953F06520F7E2E700F795ED /* Main.storyboard */,
 				E953F06820F7E2E900F795ED /* Assets.xcassets */,
 				E953F06A20F7E2E900F795ED /* LaunchScreen.storyboard */,
 				E953F06D20F7E2E900F795ED /* Info.plist */,
+				E953F08F20F8028F00F795ED /* LandingViewController.swift */,
 			);
 			path = "Morse Code";
 			sourceTree = "<group>";
@@ -231,7 +231,6 @@
 			files = (
 				E953F06C20F7E2E900F795ED /* LaunchScreen.storyboard in Resources */,
 				E953F06920F7E2E900F795ED /* Assets.xcassets in Resources */,
-				E953F06720F7E2E700F795ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E953F06420F7E2E700F795ED /* ViewController.swift in Sources */,
+				E953F09020F8028F00F795ED /* LandingViewController.swift in Sources */,
 				E953F06220F7E2E700F795ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E953F06520F7E2E700F795ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E953F06620F7E2E700F795ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E953F06A20F7E2E900F795ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KTQF7AQ7;
 				INFOPLIST_FILE = "Morse Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KTQF7AQ7;
 				INFOPLIST_FILE = "Morse Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

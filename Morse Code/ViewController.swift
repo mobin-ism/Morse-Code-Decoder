@@ -135,12 +135,13 @@ class ViewController: UIViewController {
     }
     @objc func translate() {
         guard let text = self.inputTextfield.text else { return }
-        if text != "" {
+        let modifiedText = text.replacingOccurrences(of: "-", with: "_", options: .literal, range: nil)
+        if modifiedText != "" {
             if  self.currentState == "morse-to-text" {
-                self.morseToText(morese: text)
+                self.morseToText(morese: modifiedText)
             }
             else {
-                self.textToMorse(text: text.uppercased())
+                self.textToMorse(text: modifiedText.uppercased())
             }
         }
     }
@@ -219,6 +220,26 @@ class ViewController: UIViewController {
                 result = result + "Y"
             case "__..":
                 result = result + "Z"
+            case "_____":
+                result = result + "0"
+            case ".____":
+                result = result + "1"
+            case "..___":
+                result = result + "2"
+            case "...__":
+                result = result + "3"
+            case "...._":
+                result = result + "4"
+            case ".....":
+                result = result + "5"
+            case "_....":
+                result = result + "6"
+            case "__...":
+                result = result + "7"
+            case "___..":
+                result = result + "8"
+            case "____.":
+                result = result + "9"
             default:
                 result = result + "*"
             }
@@ -284,6 +305,26 @@ class ViewController: UIViewController {
                 result = result + "_.__"
             case "Z":
                 result = result + "__.."
+            case "0":
+                result = result + "_____"
+            case "1":
+                result = result + ".____"
+            case "2":
+                result = result + "..___"
+            case "3":
+                result = result + "...__"
+            case "4":
+                result = result + "...._"
+            case "5":
+                result = result + "....."
+            case "6":
+                result = result + "_...."
+            case "7":
+                result = result + "__..."
+            case "8":
+                result = result + "___.."
+            case "9":
+                result = result + "____."
             default:
                 result = result + "*"
             }
